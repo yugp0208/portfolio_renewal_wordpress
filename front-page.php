@@ -2,6 +2,12 @@
 /*
  * Template Name: TOP
  */
+$args = array(
+  "post_type' => 'post",
+  'posts_per_page' => 6,
+);
+$query = new WP_Query( $args );
+
 ?>
 <?php get_header(); ?>
 <main class="l-main">
@@ -127,42 +133,28 @@
         <h2 class="c-section__ttl js-split js-split-effect">Works</h2>
       </div>
       <div class="c-works__list js-worksListTrigger">
-        <div class="c-works__item js-worksListFade">
-          <div class="c-works__item__img">
-            <a href="works/tokyosauna-ooo.html">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/work_04.webp" alt="SAUNA GOODS OOO" width="312" height="208" loading="lazy">
-            </a>
-          </div>
-          <p class="c-works__item__category">website</p>
-          <h3 class="c-works__item__ttl">SAUNA GOODS OOO</h3>
-        </div>
-        <div class="c-works__item js-worksListFade">
-          <div class="c-works__item__img">
-            <a href="works/yugohayashi.html">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/work_03.webp" alt="Yugo Hayashi Portfolio" width="312" height="208" loading="lazy">
-            </a>
-          </div>
-          <p class="c-works__item__category">website</p>
-          <h3 class="c-works__item__ttl">Yugo Hayashi Portfolio</h3>
-        </div>
-        <div class="c-works__item js-worksListFade">
-          <div class="c-works__item__img">
-            <a href="works/tokyocamp-fenic.html">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/work_02.webp" alt="TokyoCamp FENIC" width="312" height="208" loading="lazy">
-            </a>
-          </div>
-          <p class="c-works__item__category">webpage</p>
-          <h3 class="c-works__item__ttl">TokyoCamp FENIC</h3>
-        </div>
-        <div class="c-works__item js-worksListFade">
-          <div class="c-works__item__img">
-            <a href="works/masahiko-ozumi.html">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/work_01.webp" alt="Masahiko Ozumi Paris" width="312" height="208" loading="lazy">
-            </a>
-          </div>
-          <p class="c-works__item__category">website</p>
-          <h3 class="c-works__item__ttl">Masahiko Ozumi Paris</h3>
-        </div>
+        <?php if( $query->have_posts() ) : ?>
+            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+              <div class="c-works__item js-worksListFade">
+                <div class="c-works__item__img">
+                  <a href="<?php the_permalink(); ?>">
+                    <?php the_post_thumbnail(); ?>
+                  </a>
+                </div>
+                <p class="c-works__item__category">
+                  <?php
+                    $cats = get_the_category();
+                    foreach($cats as $cat){
+                      if($cat->parent){
+                        echo $cat->cat_name;
+                      }
+                    }
+                  ?>
+                </p>
+                <h3 class="c-works__item__ttl"><?php the_title(); ?></h3>
+              </div>
+            <?php endwhile; ?>
+          <?php endif; ?>
       </div>
     </div>
   </section><!--works-->
