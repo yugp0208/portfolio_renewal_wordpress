@@ -9,21 +9,21 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title><?php the_title(); ?></title>
+<title><?php the_title(); ?> / <?php bloginfo('name'); ?></title>
 <!--meta-->
 <meta name="format-detection" content="telephone=no">
 <meta name="keywords" content="YUGO HAYSHI,Yugo Hayashi,林優吾,ハヤシユウゴ,ユウゴハヤシ,ホームページ,ウェブサイト,HP,Webサイト,Webサイト制作">
-<meta property="og:site_name" content="Yugo Hayashi - 林優吾">
-<meta name="description" content="Webデザイナー兼フロントエンドエンジニア 林優吾のポートフォリオサイト">
-<meta property="og:title" content="Yugo Hayashi - 林優吾" />
+<meta property="og:site_name" content="<?php bloginfo('name'); ?>">
+<meta name="description" content="<?php bloginfo('description'); ?>">
+<meta property="og:title" content="<?php the_title(); ?> / <?php bloginfo('name'); ?>" />
 <meta property="og:url" content="https://yugohayashi.com/">
-<meta property="og:description" content="Webデザイナー兼フロントエンドエンジニア 林優吾のポートフォリオサイト">
+<meta property="og:description" content="<?php bloginfo('description'); ?>">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://yugohayashi.com/img/ogp/ogp.webp">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://yugohayashi.com/img/ogp/ogp.webp" />
-<meta name="twitter:title" content="Yugo Hayashi - 林優吾" />
-<meta name="twitter:description" content="Webデザイナー兼フロントエンドエンジニア 林優吾のポートフォリオサイト" />
+<meta name="twitter:title" content="<?php the_title(); ?> / <?php bloginfo('name'); ?>" />
+<meta name="twitter:description" content="<?php bloginfo('description'); ?>" />
 <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" />
 <!--Materialicon-->
 <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone" rel="stylesheet">

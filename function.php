@@ -17,5 +17,8 @@ add_filter('post_link_category', function ($category) {
 	return $category;
 }, 10, 3);
 
+// サムネイル画像を有効にする
+add_theme_support( 'post-thumbnails' );
+
 
 ?>
