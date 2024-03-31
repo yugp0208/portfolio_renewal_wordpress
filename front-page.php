@@ -12,19 +12,21 @@ $query = new WP_Query( $args );
 <?php get_header(); ?>
 <main class="l-main">
   <section class="p-top__kv">
-    <div class="p-top__kv__top">
-      <p class="p-top__kv__ttl"><span>Frontend Developer</span><span>Yugo Hayashi</span><span>Portfolio</span></p>
+    <div class="p-top__kv__ttl">
+      <div class="p-top__kv__ttl__head">
+        <span>Frontend&nbsp;</span><span>Developer</span>
+      </div>
+      <span>Yugo Hayashi</span>
     </div>
-    <div class="p-top__kv__bottom">
-      <div class="p-top__kv__period">
-        <span><a href="#">2018</a></span>
-        <span></span>
-        <span class="js-count" id="js-current-year" data-from="0" data-to=""><a href="#">0</a></span>
-      </div>
-      <div class="p-top__kv__scroll">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/scroll_circle.webp" alt="Scroll Down" width="200" height="200">
-        <span class="material-symbols-outlined">south</span>
-      </div>
+    <div class="p-top__kv__img"><img src="<?php echo get_template_directory_uri(); ?>/img/kv.webp" alt="林優吾"></div>
+    <div class="p-top__kv__period">
+      <span><a href="#">2018</a></span>
+      <span></span>
+      <span class="js-count" id="js-current-year" data-from="0" data-to=""><a href="#">0</a></span>
+    </div>
+    <div class="p-top__kv__scroll">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/scroll_circle.webp" alt="Scroll Down" width="200" height="200">
+      <span class="material-symbols-outlined">south</span>
     </div>
   </section><!--kv-->
   <section class="c-section p-top__about js-split-trigger" id="about">
@@ -115,7 +117,7 @@ $query = new WP_Query( $args );
             <h3 class="p-top__skill__item__ttl"><span>02</span>Web Development</h3>
             <p class="p-top__skill__item__txt">HTML、Pug、SCSSを用いて、デザインを正確に再現します。<br>HTMLをどれだけ単純な構造で再現できるか。を1つのこだわりとしており、SCSSでは、BEMやFLOCSSを用いて、後に更新がしやすいソースコードになるように心掛けています。<br>また、GSAP・Three.js等のリッチな表現でWebサイトの世界観をユーザーに効果的に伝えられる事を目指しています。</p>
             <p class="p-top__skill__item__tools">Tools : Illustrator / Photoshop / Figma / XD</p>
-            <p class="p-top__skill__item__tools">Stack : HTML / Pug / SCSS / JavaScript / JQuery / GSAP / Three.js / React.js / WebPack / Gulp / Vite / Github / Bitbucket</p>
+            <p class="p-top__skill__item__tools">Stack : HTML / Pug / SCSS / JavaScript / JQuery / GSAP / Three.js / React.js / WebPack / Gulp / Vite / Github / Bitbucket / GitLab</p>
           </div>
           <div class="p-top__skill__list__item">
             <h3 class="p-top__skill__item__ttl"><span>03</span>CMS Construction</h3>
