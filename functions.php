@@ -18,7 +18,10 @@ add_filter('post_link_category', function ($category) {
 }, 10, 3);
 
 // サムネイル画像を有効にする
-add_theme_support( 'post-thumbnails' );
+function theme_setup() {
+    add_theme_support('post-thumbnails');
+}
+add_action('after_setup_theme', 'theme_setup');
 
 
 ?>
