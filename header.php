@@ -19,9 +19,9 @@
 <meta property="og:url" content="https://yugohayashi.com/">
 <meta property="og:description" content="<?php bloginfo('description'); ?>">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://yugohayashi.com/img/ogp/ogp.webp">
+<meta property="og:image" content="<?php echo esc_url(get_theme_file_uri('img/ogp/ogp.webp')); ?>">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://yugohayashi.com/img/ogp/ogp.webp" />
+<meta name="twitter:image" content="<?php echo esc_url(get_theme_file_uri('img/ogp/ogp.webp')); ?>" />
 <meta name="twitter:title" content="<?php the_title(); ?> / <?php bloginfo('name'); ?>" />
 <meta name="twitter:description" content="<?php bloginfo('description'); ?>" />
 <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" />
