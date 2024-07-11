@@ -9,20 +9,32 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title><?php the_title(); ?> / <?php bloginfo('name'); ?></title>
+<?php if(is_front_page()): ?>
+<title><?php bloginfo('name');?></title>
+<?php else: ?>
+<title><?php the_title(); ?> | <?php bloginfo('name'); ?></title>
+<?php endif; ?>
 <!--meta-->
 <meta name="format-detection" content="telephone=no">
 <meta name="keywords" content="YUGO HAYSHI,Yugo Hayashi,林優吾,ハヤシユウゴ,ユウゴハヤシ,ホームページ,ウェブサイト,HP,Webサイト,Webサイト制作">
 <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
 <meta name="description" content="<?php bloginfo('description'); ?>">
-<meta property="og:title" content="<?php the_title(); ?> / <?php bloginfo('name'); ?>" />
+<?php if(is_front_page()): ?>
+<meta property="og:title" content="<?php bloginfo('name'); ?>" />
+<?php else: ?>
+<meta property="og:title" content="<?php the_title(); ?> | <?php bloginfo('name'); ?>" />
+<?php endif; ?>
 <meta property="og:url" content="https://yugohayashi.com/">
 <meta property="og:description" content="<?php bloginfo('description'); ?>">
 <meta property="og:type" content="website">
 <meta property="og:image" content="<?php echo esc_url(get_theme_file_uri('img/ogp/ogp.webp')); ?>">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="<?php echo esc_url(get_theme_file_uri('img/ogp/ogp.webp')); ?>" />
-<meta name="twitter:title" content="<?php the_title(); ?> / <?php bloginfo('name'); ?>" />
+<?php if(is_front_page()): ?>
+<meta name="twitter:title" content="<?php bloginfo('name'); ?>" />
+<?php else: ?>
+<meta name="twitter:title" content="<?php the_title(); ?> | <?php bloginfo('name'); ?>" />
+<?php endif; ?>
 <meta name="twitter:description" content="<?php bloginfo('description'); ?>" />
 <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" />
 <!--Materialicon-->
