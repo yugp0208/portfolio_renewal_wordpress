@@ -24,7 +24,7 @@
           2000年2月、福井県出身。<br>
           高校生の頃、業界の第一線で働くWebデザイナーの方をテレビで拝見し、Web業界を志す。<br>
           大阪のIT専門学校で2年間デザインとプログラミングを学び、2020年に就職して上京。その後4年間、Webコーダーとして、Webデザイン制作・Webサイト制作・運用に従事。<br>
-          旅行、音楽、野球が好き。好奇心旺盛な性格、素直さを武器に、日々新たなWeb技術のをキャッチアップし、魅力的なクリエイティブを作っていきたい。
+          旅行、音楽、野球が好き。好奇心旺盛な性格、素直さを武器に、日々新たなWeb技術をキャッチアップし、魅力的なクリエイティブを作っていきたい。
         </p>
         <ul class="c-snslist">
           <li class="c-snslist__item">
@@ -87,7 +87,7 @@
       <div class="timeline-item" data-text="17歳">
         <div class="timeline__content"><img class="timeline__img" src="<?php echo get_template_directory_uri(); ?>/img/about/about_03.webp" />
           <h2 class="timeline__content-title">2017</h2>
-          <p class="timeline__content-desc">高校2年生の時に、web業界の特集番組をテレビで見て、webデザイナー・エンジニアという職を知り、webサイト、webサービスを作る事に興味が湧く。</p>
+          <p class="timeline__content-desc">高校2年生の時に、Web業界の特集番組をテレビで見て、Webデザイナー・エンジニアという職を知り、Webサイト、Webサービスを作る事に興味が湧く。</p>
         </div>
       </div>
       <div class="timeline-item" data-text="18歳">
