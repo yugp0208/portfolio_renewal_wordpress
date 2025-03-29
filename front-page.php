@@ -158,6 +158,17 @@ $query = new WP_Query( $args );
             <?php endwhile; ?>
           <?php endif; ?>
       </div>
+      <div class="c-morebtn">
+        <a href="<?php echo esc_url(home_url('/')); ?>works/" class="c-morebtn__inner">
+          <div class="c-morebtn__txt">View More</div>
+          <div class="c-morebtn__circle js-morebtn">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19.5" stroke="#ccc" stroke-width="1"></circle>
+              <circle cx="20" cy="20" r="19.5" stroke="#000" stroke-width="1" class="js-circle-01-icon" style="stroke-dasharray: 122.522; stroke-dashoffset: 122.522; opacity: 0;"></circle>
+            </svg>
+          </div>
+        </a>
+      </div>
     </div>
   </section><!--works-->
   <section class="c-section p-top__loop">

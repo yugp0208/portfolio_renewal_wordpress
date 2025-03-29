@@ -105,7 +105,7 @@
       <div class="timeline-item" data-text="24歳">
         <div class="timeline__content"><img class="timeline__img" src="<?php echo get_template_directory_uri(); ?>/img/about/img_06.webp" />
           <h2 class="timeline__content-title">2024</h2>
-          <p class="timeline__content-desc">2024年現在、フロントエンドエンジニアとして更にレベルアップする為に、日々技術をキャッチアップし、スキルの領域を広げていきたい。</p>
+          <p class="timeline__content-desc">2024年現在、Webクリエイターとして更にレベルアップする為に、日々技術をキャッチアップし、スキルの領域を広げていきたい。</p>
         </div>
       </div>
       </div>
